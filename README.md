@@ -1,6 +1,6 @@
 ## Stopwatch
 
-Stopwatch measures tatal time from start, and lap times.
+Stopwatch measures total time from start, and lap times. Perfect for athletes.
 
 #### Javascript only.
 

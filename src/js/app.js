@@ -36,9 +36,9 @@ const startStoper = () => {
     btn.innerHTML = 'Stop';
     totalTimeDisplay.classList.add('d-none');
     intervalId = setInterval(() => {
-        time += 10;
+        time += 1;
         showTime.innerHTML = convertShowTime(time);
-    }, 10);
+    }, 1);
 };
 
 const stopStoper = () => {

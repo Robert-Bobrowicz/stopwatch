@@ -2,7 +2,8 @@
 
 * {
     margin: 0;
-    padding: 20px 30px;
+    padding: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
     color: #05164d;
@@ -10,13 +11,22 @@
 
 body {
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
 
 button {
     background: #05164d;
     color: aliceblue;
     min-width: 150px;
+    min-height: 55px;
 }
 
 button:hover {
@@ -25,6 +35,7 @@ button:hover {
 }
 
 .time {
+    max-width: 480px;
     background-color: #ececec;
     padding: 10px 20px;
     margin-bottom: 1rem;
@@ -46,6 +57,7 @@ button:hover {
 
 .total-time {
     margin-left: 0;
+    margin-top: 25px;
     padding-bottom: 3px;
     padding-left: 20px;
     font-weight: 600;
@@ -54,4 +66,29 @@ button:hover {
 
 .d-none {
     display: none;
+}
+
+@media only screen and (max-width: 630px) {
+    * {
+        padding: 15px 10px;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    h2 {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+        margin-bottom: 10px;
+    }
 }
